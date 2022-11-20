@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #F5F7FB;
+    font-family: 'Inter', sans-serif;
+    color: #293264
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quiz_wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quiz_title {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 37px;
+    text-align: center;
+}
+
+.quiz_start {
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F5F7FB;
+    background: #4D5B9E;
+    border-radius: 15px;
+    border: none;
+    padding: 16px 28px;
+    max-width: 100%; 
+    cursor: pointer;
+}
+
+.quiz_start:hover {
+    background-color: #465394;
+}
+
+.quiz_start:active {
+    transform:scale(0.99,0.99);
+}
+
+
+.question_answer_grid {
+    padding: 40px 60px;
+}
+.question_answer_wrapper {
+    padding: 15px;
+    border-bottom: 0.8px solid #DBDEF0;
+    max-width: 600px;
+}
+
+
+.question {
+    font-family: 'Karla';
+    font-weight: 700;   
+    font-size: 1rem;
+}
+
+.answer_wrapper {
+    display: flex;
+    padding: 10px 0px;
+    justify-content: start;
+}
+
+.answer {
+    color: #293264;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.8rem;
+    line-height: 12px;
+    border: 1px solid #4D5B9E;
+    border-radius: 8px;
+    padding: 5px 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-inline-end: 1rem;
+    cursor: pointer;
+    background-color: #F5F7FB;
+}
+
+.answer:disabled {
+    cursor: unset;
+}
+
+.end {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items:  center;
+}
+
+.btn {
+    background: #4D5B9E;
+    border-radius: 10px;
+    border: none;
+    font-style: normal;
+    font-weight: 300;
+    text-align: center;
+    color: #F5F7FB;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+}
+
+.btn:hover {
+    background-color: #465394;
+}
+
+.btn:active {
+    transform:scale(0.99,0.99);
+}
+
+.score {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-align: center;
+    color: #293264;
+
+}
